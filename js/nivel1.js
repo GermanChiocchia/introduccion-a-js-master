@@ -61,7 +61,7 @@ let nombreDeVariable;
 console.log('nombreDeVariable es '+nombreDeVariable);
 /*
     Variables
-    =========
+    =========v
 
     Una variable es un lugar para guardar información. Para crear (o mejor dicho DECLARAR) una variable usamos 'let',
     así:
