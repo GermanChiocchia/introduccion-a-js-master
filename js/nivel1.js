@@ -57,8 +57,8 @@
 // Consejo: El atajo del teclado para guardar cambios a un archivo es 'CMD + S' en Mac y 'CTRL + S' en
 //      Windows.
 
-let nombreDeVariable;
-console.log('nombreDeVariable es '+nombreDeVariable);
+// let nombreDeVariable;
+// console.log('nombreDeVariable es '+nombreDeVariable);
 /*
     Variables
     =========
@@ -103,15 +103,15 @@ console.log('nombreDeVariable es '+nombreDeVariable);
     a usar 'let' porque lleva a que tengamos menos errores de programación.
 */
 
-nombreDeVariable = "Hola, Mundo!";
+// nombreDeVariable = "Hola, Mundo!";
 
-let nuevaVariable = 1;
+// let nuevaVariable = 1;
 
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
 
-let numeroUno;
-let numeroDos;
+// let numeroUno;
+// let numeroDos;
 
 /*
     Podés usar el nombre de tus variables pare representar qué información tienen adentro, por ejemplo:
@@ -142,9 +142,9 @@ let numeroDos;
 
 /*--------------------------*/
 
-let nombre = 'German';
-let edad = 28;
-alert('Mi nombre es '+ nombre + ' y mi edad es '+ edad);
+// let nombre = 'German';
+// let edad = 28;
+// alert('Mi nombre es '+ nombre + ' y mi edad es '+ edad);
 /*
     Constantes
     =========
@@ -168,8 +168,8 @@ alert('Mi nombre es '+ nombre + ' y mi edad es '+ edad);
 
 // TAREA: Crear una constante y mostrarla con un alert
 
-const IVA = 21;
-alert(IVA);
+// const IVA = 21;
+// alert(IVA);
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
 
@@ -203,10 +203,10 @@ alert(IVA);
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
 
-let diez = 10;
-let tres = 3;
-let resultMult = diez*tres;
-console.log(resultMult);
+// let diez = 10;
+// let tres = 3;
+// let resultMult = diez*tres;
+// console.log(resultMult);
 
 /*
     Funciones
@@ -261,7 +261,7 @@ console.log(resultMult);
 function sumar(sumando1,sumando2){
     return sumando1 + sumando2
 };
-console.log(sumar(3,5));
+// console.log(sumar(3,5));
 
 // Creá una función llamada 'sumar'
 // Escribí código para que acepte 2 argumentos (numero1 y numero2)
@@ -276,24 +276,32 @@ console.log(sumar(3,5));
 function restar(restando1,restando2){
     return restando1 - restando2
 };
-console.log(restar(8,5));
+// console.log(restar(8,5));
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
 
-let anioActual = 2019;
-let anioNacimiento = 1992;
-let miEdad = restar(anioActual,anioNacimiento);
-console.log('Mi edad es '+ miEdad);
+// let anioActual = 2019;
+// let anioNacimiento = 1992;
+// let miEdad = restar(anioActual,anioNacimiento);
+// console.log('Mi edad es '+ miEdad);
 
-let edadUsuario = prompt('Ingrese su edad: ',28);
-console.log('Tu edad es '+ edadUsuario);
+// let edadUsuario = prompt('Ingrese su edad: ',28);
+// console.log('Tu edad es '+ edadUsuario);
 
-function saludar(nombre){
-    return 'Hola! '+ nombre;
-}
-let nombre3 = prompt('Cual es tu nombre?');
-console.log(saludar(nombre3));
+// function saludar(nombre){
+//     return 'Hola! '+ nombre;
+// }
+// let nombre3 = prompt('Cual es tu nombre?');
+// console.log(saludar(nombre3));
 // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
+
+// function calcularEdad(anioNacimiento){
+//     const anioActual = 2021;
+//     const edadd = anioActual - anioNacimiento;
+//     return edadd;
+// }
+// anioNacimiento = Number(prompt('Que año naciste?'));
+// console.log(calcularEdad(anioNacimiento));
 
 /*
     Condicionales If-Else
@@ -362,6 +370,17 @@ console.log(saludar(nombre3));
 //      Si el operador es '+', vamos a usar la función para sumar.
 //      Si no, vamos a usar la función para restar.
 //
+const a = 2;
+const b = 5;
+let signo = prompt('Ingrese signo para operar: ');
+
+if(signo === '+'){
+    console.log(sumar(a,b))
+}
+else{
+    console.log(restar(a,b))
+}
+
 // Paso 1 - Crear una variable llamada 'operador' y asignarle el valor '+'.
 // Paso 2 - Crear 2 variables que contengan 2 números cualquiera.
 // Paso 3 - Crear una condición if/else basada en el operador que tenemos.
